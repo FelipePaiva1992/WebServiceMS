@@ -1,0 +1,46 @@
+Baixe a cadeia de certificados daqui: https://homologacao.nfe.sefaz.sp.gov.br
+
+Importe utilizando o internet Explorer
+
+Exporte o certificados  utilizando a opção X.509 codificado na base 64(*.cer) renomeie para nfe.cer
+
+keytool.exe -import -alias nfe -keystore c:\\nfe\\nfe.ks -file c:\\nfe\\nfe01.cer (nesse momento digite uma senha para o keystore)
+
+
+===============================================
+
+GERANDO ARQUIVO CACERTS
+
+Execute a classe GerarArquivoCacerts
+Gere os arquivos de homologacao apontando para o servidor de homologacao da NFE
+Gere os arquivos de procucao apontando para o servidor de producao da NFE
+
+Jogue os arquivos na pasta de certificados do projeto 
+Renomeia os arquivos na classe NFEUtil
+
+
+================================================
+
+UTILIZANDO UM NOVO CERTIFICADO
+
+1 - Importe o certificado .PFX do seu cliente para o IE >>> FERRAMENTAS/OPÇÕES DA INTERNET/ ABA CONTEÚDO / BOTÃO CERTIFICADOS. 
+
+2- Selecione a aba "Pessoal". 
+
+3- Clique em importar. 
+
+4- O Sistema vai abrir um assistente. Selecione o Certificado e clique em avançar. 
+
+5- Na próxima tela MARQUE O CHECBOX "Marcar esta chave como exportável. Isso possibilitará o backup e transporte das chaves posteriormente". Como o texto diz se você não marcar esta opção o certificado não poderá ser exportado 
+
+6- Após ser importado seu certificado vai para a aba Pessoal. Clique sobre ele e clique em "exportar" 
+
+7- Clique em avançar 
+
+8- Na próxima tela marque a opção: "Sim, exportar a chave privada". Clique em avançar. 
+
+9- Na janela seguinte marque o checkbox "Incluir todos os certificados no caminho de certificação, se possível". <<ESTA OPÇÃO É CRUCIAL NÃO ESQUEÇA DELA !!! 
+
+10- Informe a senha e a seguir o local onde o arquivo será salvo. 
+
+PRONTO Feito isso está pronto você já pode utilizar o certificado no seu projeto. 

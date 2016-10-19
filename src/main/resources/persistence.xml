@@ -12,13 +12,14 @@
 		<class>br.com.mobshop.ws.model.VendaItem</class>
 		<class>br.com.mobshop.ws.model.Vendedor</class>
 		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
 		<!-- DADOS CONEXAO -->  
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />  
             <!-- <property name="hibernate.connection.username" value="root" />  
             <property name="hibernate.connection.password" value="root" />   -->
-            <property name="hibernate.connection.username" value="thesourc_us" />  
-            <property name="hibernate.connection.password" value="thesourc_pw" />  
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/thesourc_tcc" />
+            <property name="hibernate.connection.username" value="code4u_us" />  
+            <property name="hibernate.connection.password" value="code4u_pw" />  
+            <property name="hibernate.connection.url" value="jdbc:mysql://54.191.197.37:3306/code4u" />
             
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
 			<property name="hibernate.show_sql" value="false" />

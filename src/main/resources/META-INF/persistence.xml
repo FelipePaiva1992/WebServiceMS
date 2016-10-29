@@ -19,7 +19,7 @@
             <property name="hibernate.connection.password" value="root" />   -->
             <property name="hibernate.connection.username" value="code4u_us" />  
             <property name="hibernate.connection.password" value="code4u_pw" />  
-            <property name="hibernate.connection.url" value="jdbc:mysql://54.191.197.37:3306/code4u" />
+            <property name="hibernate.connection.url" value="jdbc:mysql://35.161.75.109:3306/code4u" />
             
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
 			<property name="hibernate.show_sql" value="false" />

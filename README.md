@@ -23,4 +23,4 @@ Sistema de controle das vendas efetuadas dentro do aplicativo
 * Senha : admin
 
 
-by www.code4u.com.br
+by www.code4u.com.br 

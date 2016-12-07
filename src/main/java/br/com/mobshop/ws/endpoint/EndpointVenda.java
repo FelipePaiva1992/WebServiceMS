@@ -57,8 +57,8 @@ public class EndpointVenda {
 	public Response pagarVenda(@QueryParam("idVenda")Long idVenda, @QueryParam("codConfirmacao")String codConfirmacao, @QueryParam("tipoPagamento")String tpPagamento){
 		vendaDao = new VendaDao();
 		VendaAux venda = vendaDao.pagarVenda(idVenda, codConfirmacao, tpPagamento);
-		emitirNFE = new EmitirNotaFiscal();
-		emitirNFE.schedullarEmissaoNota(venda);
+//		emitirNFE = new EmitirNotaFiscal();
+//		emitirNFE.schedullarEmissaoNota(venda);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {

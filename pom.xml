@@ -140,6 +140,45 @@
 			<version>2.3.5.Final</version>
 		</dependency>
 		
+		<dependency>
+    <groupId>org.apache.ws.commons.axiom</groupId>
+    <artifactId>axiom-api</artifactId>
+    <version>1.2.10</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.ws.commons.axiom</groupId>
+    <artifactId>axiom-impl</artifactId>
+    <version>1.2.10</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.ws.commons.axiom</groupId>
+    <artifactId>axiom-dom</artifactId>
+    <version>1.2.10</version>
+</dependency>
+
+<dependency>
+			<groupId>nfeWs</groupId>
+		    <artifactId>nfeWs</artifactId>
+		    <version>1.0</version>
+		    <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/nfeWs.jar</systemPath>
+		    <scope>system</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>nfeXML</groupId>
+		    <artifactId>nfeXML</artifactId>
+		    <version>1.0</version>
+		    <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/nfeXML.jar</systemPath>
+		    <scope>system</scope>
+		</dependency>
+		
+		<dependency>
+    <groupId>net.sf.jasperreports</groupId>
+    <artifactId>jasperreports</artifactId>
+    <version>5.1.0</version>
+</dependency>
 	</dependencies>
 
 	<build>

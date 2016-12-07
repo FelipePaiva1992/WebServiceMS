@@ -51,7 +51,7 @@ import br.com.mobshop.nfe.exception.NfeException;
 /**
  * @author a03781
  *
- *	Função da classe é de assinar o XML da NFE com o certificado A1.
+ *	FunÃ§Ã£o da classe Ã© de assinar o XML da NFE com o certificado A1.
  *
  */
 public class AssinarNfeXML {  
@@ -115,7 +115,7 @@ public class AssinarNfeXML {
 									String senhaDoCertificadoDoCliente,
 									String xml) throws Exception{
     	
-        logger.info("Assinando inutiliza��o");  
+        logger.info("Assinando inutilizacao");  
         String fileInutNFe = xml;  
         String xmlInutNFe = lerXML(fileInutNFe);  
         String xmlInutNFeAssinado = assinaInutNFe(  
@@ -273,7 +273,7 @@ public class AssinarNfeXML {
         try {  
             ks.load(entrada, senha.toCharArray());  
         } catch (IOException e) {  
-            throw new NfeException("Senha do Certificado Digital incorreta ou Certificado inválido.");  
+            throw new NfeException("Senha do Certificado Digital incorreta ou Certificado invalido.");  
         }  
   
         KeyStore.PrivateKeyEntry pkEntry = null;  
